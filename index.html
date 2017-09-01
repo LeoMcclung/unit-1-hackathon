@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>PokeQuiz</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <title>PokeQuiz</title>
+</head>
+
+<body class="orange darken-3">
+  <header>
+    <div class="row">
+      <div class="col s12 yellow darken-1">
+        <h1 class="center-align">What Pokemon are you??</h1>
+      </div>
+      <div class="col s6 green">
+        <!-- <h2 class="center-align">Answer the questions!</h2> -->
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <span class="card-title">Answer the questions</span>
+                <form id="pokeQuiz">
+                  <div>
+                    <table class="responsive-table">
+                      <tr>
+                        <label for="q1">What is your favorite color?</label><br />
+                        <input id="q1" type="text"><br />
+                      </tr>
+                      <tr>
+                        <label for="q2">Cats or dogs?</label><br />
+                        <input id="q2" type="text"><br />
+                      </tr>
+                      <tr>
+                        <label for="q3">Breakfast burritos or pancakes?</label><br />
+                        <input id="q3" type="text"><br />
+                      </tr>
+                      <tr>
+                        <label for="q4">DC or Marvel?</label><br />
+                        <input id="q4" type="text"><br />
+                      </tr>
+                      <tr>
+                        <label for="q5">Do you like training or going to the gym?</label><br />
+                        <input id="q5" type="text"><br />
+                      </tr>
+                      <tr>
+                        <label for="q6">Where were you born?</label><br />
+                        <input id="q6" type="text"><br />
+                      </tr>
+                      <tr>
+                        <label for="q7">Do you own any pets?</label><br />
+                        <input id="q7" type="text"><br />
+                      </tr>
+                      <tr>
+                        <label for="q8">Do you own any pets?</label><br />
+                        <input id="q8" type="text"><br />
+                      </tr>
+                      <tr>
+                        <label for="q9">Boxers or briefs?</label><br />
+                        <input id="q9" type="text"><br />
+                      </tr>
+                      <tr>
+                        <label for="q10">What's your favorite ice cream flavor?</label><br />
+                        <input id="q10" type="text"><br />
+                      </tr>
+                      <tr>
+                        <button type="submit" class="red">Find out which Pokemon you are!</button><br />
+                      </tr>
+                    </table>
+                  </div>
+                </form>
+              </div>
+              <!-- <div class="card-action">
+                <button class="submit-button">Submit</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col s6 orange darken-3">
+        <!-- <h3 class="center-align">YOU ARE......</h3> -->
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card deep-orange darken-4">
+              <div class="card-content black-text">
+                <span class="card-title">And you are....</span>
+              </div>
+              <!-- <div class="card-action">
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
 
 
-  <script></script>  
-  </body>
+  <script></script>
+</body>
+
 </html>
