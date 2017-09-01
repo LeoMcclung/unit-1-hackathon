@@ -12,8 +12,9 @@ form.addEventListener('submit', function(e) {
     .then(function(data) {
       console.log(data);
       var url = data.sprites.front_default;
+      var pokeName = data.name;
 
-      addImageToDom(url);
+      addImageToDom(url, pokeName);
     });
 
 });
@@ -33,10 +34,14 @@ function getRandomInt() {
   return Math.floor(Math.random() * (722-1)) + 1; //the max is exclusive and the min is inclusive
 }
 
-function addImageToDom(url) {
-	var main = document.getElementsByTagName('main')[0];
+function addImageToDom(url, pokeName) {
+	var pokeImg = document.getElementById('imgResults');
 	var img = document.createElement('img');
+  var caption = document.createElement('p');
+  caption.innerText = pokeName;
 
 	img.setAttribute('src', url);
-	main.append(img);
+	img.setAttribute('alt', "");
+	pokeImg.append(img);
+  pokeImg.append(caption);
 }
