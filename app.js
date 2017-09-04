@@ -45,3 +45,5 @@ function addImageToDom(url, pokeName) {
 	pokeImg.append(img);
   pokeImg.append(caption);
 }
+
+// document.querySelectorAll('input').forEach(input => input.value = '')
